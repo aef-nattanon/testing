@@ -1,0 +1,51 @@
+Arguments: 
+  /Users/nattanon/.nvm/versions/node/v10.21.0/bin/node /usr/local/Cellar/yarn/1.22.10/libexec/bin/yarn.js install
+
+PATH: 
+  /Users/nattanon/.rvm/gems/ruby-2.6.5/bin:/Users/nattanon/.rvm/gems/ruby-2.6.5@global/bin:/Users/nattanon/.rvm/rubies/ruby-2.6.5/bin:/usr/local/opt/php@7.0/sbin:/usr/local/opt/php@7.0/bin:/usr/local/opt/php@7.0/sbin:/usr/local/opt/php@7.0/bin:/Users/nattanon/.gvm/pkgsets/go1.11.4/global/bin:/Users/nattanon/.gvm/gos/go1.11.4/bin:/Users/nattanon/.gvm/pkgsets/go1.11.4/global/overlay/bin:/Users/nattanon/.gvm/bin:/Users/nattanon/.gvm/bin:/Users/nattanon/.nvm/versions/node/v10.21.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Applications/Redis.app/Contents/Resources/Vendor/redis/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:/Users/nattanon/.rvm/bin
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  10.21.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/nattanon/Codes/testing/package.json: Unexpected token , in JSON at position 324
+      at JSON.parse (<anonymous>)
+      at /usr/local/Cellar/yarn/1.22.10/libexec/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.22.10/libexec/lib/cli.js:310:30)
+      at /usr/local/Cellar/yarn/1.22.10/libexec/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "testing",
+    "version": "1.0.0",
+    "description": "",
+    "main": "ex-1.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/aef-nattanon/testing.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    ,
+    "devDependencies": {
+      "babel-cli": "^6.24.0",
+      "babel-preset-es2015": "^6.24.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
