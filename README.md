@@ -38,4 +38,62 @@ npm run start6
 ```
 ![alt tag](docs/image-2.png)
 
+### Ex7
 
+![alt tag](docs/ER.png)
+
+- parent_id คือ id ของลูกค้าหลัก
+
+### Ex8
+```sql
+ SELECT COUNT(*) FROM "customers" WHERE  (YEAR(NOW()) - YEAR(`birthdate`)) < 30;
+```
+
+```sql
+ SELECT COUNT(*) FROM "customers" WHERE  (YEAR(NOW()) - YEAR(`birthdate`)) BETWEEN 30 and 29;
+```
+
+```sql
+ SELECT COUNT(*) FROM "customers" WHERE  (YEAR(NOW()) - YEAR(`birthdate`)) BETWEEN 40 and 49;
+```
+
+```sql
+ SELECT COUNT(*) FROM "customers" WHERE  (YEAR(NOW()) - YEAR(`birthdate`)) > 50;
+```
+
+### Ex9
+
+```sql
+ SELECT * FROM "customers"  WHERE "customers"."parent_id" IS NULL;
+```
+### Ex10
+
+```sql
+SELECT "customers".* FROM "customers" INNER JOIN "customers" ON "customers"."id" = "customers"."parent_id" as "prarent" WHERE "customers"."parent_id" = != NULL
+```
+ก็จะมีเฉพสะลูกค้าย่อย
+```sql
+WHERE "customers"."parent_id" = != NULL
+```
+
+### EX10
+```js
+class Customers {
+  constructor(params) {
+  ...
+  }
+  get all() {
+    return this.calcArea();
+  }
+  insert(params) {
+    ...
+  }
+  edit(params){
+    ...
+  }
+  get(params){
+    ...
+}
+```
+
+![alt tag](docs/image-3.png)
