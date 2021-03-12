@@ -25,10 +25,17 @@ npm run start4
 ```
 i: 5
 
+
 ### Ex5
 ```
 npm run start5
 ```
-
 r: 2304
+
+### Ex6
+```
+npm run start6
+```
+![alt tag](docs/image-2.png)
+
 
